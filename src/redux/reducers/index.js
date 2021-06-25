@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import informationReducer from './informationReducer';
-import selectedInfoReducer from './selectedInfoReducer';
+import projectsReducer from './projectsReducer';
+import selectedProjectReducer from './selectedProjectReducer';
 
 const rootReducer = combineReducers({
-  info: informationReducer,
-  selectedInfo: selectedInfoReducer
+  projects: projectsReducer,
+  selectedProject: selectedProjectReducer
 });
 
 export default rootReducer;

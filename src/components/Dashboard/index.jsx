@@ -2,23 +2,23 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { loadInfo } from '../../redux/actions/actionCreators';
+import { loadProjects } from '../../redux/actions/actionCreators';
 
 const Dashboard = () => {
-  const info = useSelector((store) => store.info);
+  const projects = useSelector((store) => store.projects);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!info.lenght) dispatch(loadInfo());
+    if (!projects.lenght) dispatch(loadProjects());
   });
 
   return (
     <>
       <ul>
         {
-          info.map((detail) => (
-            <Link to={`/detail/${detail.id}`}>
-              <li key={detail.id}>{detail.name}</li>
+          projects.map((project) => (
+            <Link to={`/detail/${project.id}`}>
+              <li key={project.id}>{project.name}</li>
             </Link>
           ))
         }

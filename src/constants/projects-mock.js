@@ -1,4 +1,4 @@
-const VIDEO = [
+const PROJECTS = [
   {
     id: 1,
     name: 'Adidas x FC Bayern',
@@ -13,4 +13,4 @@ const VIDEO = [
   }
 ];
 
-export default VIDEO;
+export default PROJECTS;

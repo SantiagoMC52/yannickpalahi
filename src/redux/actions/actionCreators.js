@@ -1,26 +1,26 @@
 import actionTypes from './actionTypes';
-import VIDEO from '../../constants/videos-mock';
+import PROJECTS from '../../constants/projects-mock';
 
-export function loadInfo() {
+export function loadProjects() {
   return {
-    type: actionTypes.LOAD_INFO
+    type: actionTypes.LOAD_PROJECTS
   };
 }
 
-export function loadDetail(video) {
+export function loadProject(project) {
   return {
-    type: actionTypes.LOAD_DETAIL,
-    video
+    type: actionTypes.LOAD_PROJECT,
+    project
   };
 }
 
-export function getTaskById(projectId) {
-  let video;
-  const targetProject = VIDEO.find((current) => current.id === +projectId);
-  if (targetProject) { video = targetProject; } else { (video = {}); }
+export function getProjectById(projectId) {
+  let project;
+  const targetProject = PROJECTS.find((current) => current.id === +projectId);
+  if (targetProject) { project = targetProject; } else { (project = {}); }
 
   return {
-    type: actionTypes.LOAD_DETAIL,
-    video
+    type: actionTypes.LOAD_PROJECT,
+    project
   };
 }

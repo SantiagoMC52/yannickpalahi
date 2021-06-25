@@ -2,22 +2,22 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { getTaskById } from '../../redux/actions/actionCreators';
+import { getProjectById } from '../../redux/actions/actionCreators';
 
 const Detail = () => {
-  const selectedInfo = useSelector((store) => store.selectedInfo);
+  const selectedProject = useSelector((store) => store.selectedProject);
   const dispatch = useDispatch();
   const { projectId } = useParams();
 
   useEffect(() => {
-    dispatch(getTaskById(projectId));
+    dispatch(getProjectById(projectId));
   }, [projectId]);
 
   return (
     <>
-      <h2>{selectedInfo?.name}</h2>
-      <h3>{selectedInfo?.client}</h3>
-      <iframe width="560" height="315" src={selectedInfo?.link} frameBorder="0" allowFullScreen />
+      <h2>{selectedProject?.name}</h2>
+      <h3>{selectedProject?.client}</h3>
+      <iframe src={selectedProject?.link} frameBorder="0" allowFullScreen />
     </>
   );
 };
