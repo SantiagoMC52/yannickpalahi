@@ -1,18 +1,18 @@
-/* eslint-disable no-unused-vars */
 import VIDEOS from '../../constants/videos-mock';
 import actionTypes from '../actions/actionTypes';
 
 function informationReducer(videos = [], action) {
-  let newVideos;
+  let updatedVideos = [...videos];
+
   switch (action.type) {
     case actionTypes.LOAD_INFO:
-      newVideos = VIDEOS;
+      updatedVideos = VIDEOS;
       break;
     default:
-      newVideos = VIDEOS;
+      updatedVideos = VIDEOS;
       break;
   }
-  return newVideos;
+  return updatedVideos;
 }
 
 export default informationReducer;
