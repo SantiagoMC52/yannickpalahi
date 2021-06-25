@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { loadProjects } from '../../redux/actions/actionCreators';
+import './dashboard.scss';
 
 const Dashboard = () => {
   const projects = useSelector((store) => store.projects);
@@ -13,7 +14,7 @@ const Dashboard = () => {
   });
 
   return (
-    <>
+    <section className="list-container">
       <ul>
         {
           projects.map((project) => (
@@ -23,7 +24,7 @@ const Dashboard = () => {
           ))
         }
       </ul>
-    </>
+    </section>
   );
 };
 export default Dashboard;
