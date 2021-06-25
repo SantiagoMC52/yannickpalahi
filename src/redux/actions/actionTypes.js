@@ -1,0 +1,4 @@
+export default {
+  LOAD_PROJECTS: 'LOAD_PROJECTS',
+  LOAD_PROJECT: 'LOAD_PROJECT'
+};
