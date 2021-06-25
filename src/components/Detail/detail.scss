@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+
+        &__frame {
+            width: 450px;
+            height: 200px;
+        }
+    }
+
+    .details-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #e94d1d;
+    }
+}
