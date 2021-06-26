@@ -9,12 +9,6 @@ const Header = () => {
   return (
     <>
       <div className="top-container">
-
-        <h2 className="top-container__initials">
-          {' '}
-          <Link to="/">Yannick Palahí</Link>
-        </h2>
-
         <Hamburger toggled={isOpen} toggle={setOpen} duration={0.8} color="#e94d1d" />
       </div>
       <div className="navbar-container">
