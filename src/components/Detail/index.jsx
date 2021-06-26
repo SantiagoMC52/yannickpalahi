@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getProjectById } from '../../redux/actions/actionCreators';
+import './detail.scss';
 
 const Detail = () => {
   const selectedProject = useSelector((store) => store.selectedProject);
@@ -14,11 +15,19 @@ const Detail = () => {
   }, [projectId]);
 
   return (
-    <>
-      <h2>{selectedProject?.name}</h2>
-      <h3>{selectedProject?.client}</h3>
-      <iframe src={selectedProject?.link} frameBorder="0" allowFullScreen />
-    </>
+    <section className="main-container">
+      <div className="video-container">
+        <iframe className="video-container__frame" src={selectedProject?.link} frameBorder="0" allowFullScreen />
+      </div>
+      <div className="details-container">
+        <h2>{selectedProject?.name}</h2>
+        <h3>
+          Client:
+          {' '}
+          {selectedProject?.client}
+        </h3>
+      </div>
+    </section>
   );
 };
 export default Detail;

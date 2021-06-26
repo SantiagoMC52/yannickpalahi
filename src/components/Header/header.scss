@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B1213;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+
+    &__initials{
+        padding-top: 10px;
+        padding-left: 10px;
+        color: #e94d1d;
+        
+        a {
+            text-decoration: none;
+            color: #e94d1d;
+            font-size: 20px;
+        }
+    }
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            text-decoration: none;
+            color: #e94d1d;
+            font-size: 20px;
+        }
+    }
+}
