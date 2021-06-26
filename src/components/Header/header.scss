@@ -12,21 +12,9 @@ body {
 
 .top-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 20px;
-
-
-    &__initials {
-        padding-top: 10px;
-        padding-left: 10px;
-        color: #e94d1d;
-
-        a {
-            text-decoration: none;
-            color: #e94d1d;
-            font-size: 20px;
-        }
-    }
+    margin-right: 20px;
 }
 
 .navbar-container {
