@@ -16,9 +16,7 @@ const Detail = () => {
 
   return (
     <section className="main-container">
-      <div className="video-container">
-        <iframe className="video-container__frame" src={selectedProject?.link} frameBorder="0" allowFullScreen />
-      </div>
+      <iframe className="video-frame" src={selectedProject?.link} frameBorder="0" allowFullScreen />
       <div className="details-container">
         <h2>{selectedProject?.name}</h2>
         <h3>
