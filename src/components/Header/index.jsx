@@ -29,6 +29,15 @@ const Header = () => {
         ) : ''
       }
       </div>
+
+      <div className="desktop-navbar">
+        <nav className="desktop-navbar__nav">
+          <Link to="/">Y.P</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/aboutme">About Me</Link>
+        </nav>
+      </div>
     </>
   );
 };
