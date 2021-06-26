@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #0B1213;
+    background-color: #202324;
 }
 
 .top-container {
@@ -60,13 +60,13 @@ body {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 416px) {
     .desktop-navbar {
         display: none;
     }
 }
 
-@media (min-width: 414px) {
+@media (min-width: 415px) {
     .top-container {
         display: none;
     }
