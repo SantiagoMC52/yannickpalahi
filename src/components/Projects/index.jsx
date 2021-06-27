@@ -15,15 +15,15 @@ const Projects = () => {
 
   return (
     <section className="list-container">
-      <ul>
+      <div>
         {
           projects.map((project) => (
             <Link to={`/detail/${project.id}`}>
-              <li key={project.id}>{project.name}</li>
+              <span key={project.id}>{project.name}</span>
             </Link>
           ))
         }
-      </ul>
+      </div>
     </section>
   );
 };

@@ -14,17 +14,36 @@
     align-items: center;
     height: 90vh;
 
-    ul {
-        list-style: none;
-        font-size: 25px;
+    div {
+        @include flexbox(row, null);
+        flex-wrap: wrap;
+        width: 50%;
+        font-size: 100px;
 
         a {
             text-decoration: none;
             color: $main-color;
         }
+        span{
+            margin-right: 15px;
+        }
+    }
+}
 
-        li {
-            margin-bottom: 5px;
+@media (max-width: 416px) {
+    .list-container {
+        @include flexbox(column, center);
+        align-items: center;
+        height: 90vh;
+    
+        div {
+            @include flexbox(row, null);
+            font-size: 50px;
+    
+            a {
+                text-decoration: none;
+                color: $main-color;
+            }
         }
     }
 }
