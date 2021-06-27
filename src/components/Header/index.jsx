@@ -25,8 +25,10 @@ const Header = () => {
       </div>
 
       <div className="desktop-navbar">
-        <nav className="desktop-navbar__nav">
+        <nav className="desktop-navbar__initials">
           <Link to="/">Y.P</Link>
+        </nav>
+        <nav className="desktop-navbar__nav">
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/aboutme">About Me</Link>
