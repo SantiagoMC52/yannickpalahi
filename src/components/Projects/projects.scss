@@ -1,3 +1,6 @@
+@import './../../styles/mixins.scss';
+@import './../../styles/variables.scss';
+
 *,
 *::after,
 *::before {
@@ -7,9 +10,7 @@
 }
 
 .list-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexbox(column, center);
     align-items: center;
     height: 90vh;
 
@@ -19,12 +20,11 @@
 
         a {
             text-decoration: none;
-            color: #e94d1d;
+            color: $main-color;
         }
 
         li {
             margin-bottom: 5px;
-
         }
     }
 }

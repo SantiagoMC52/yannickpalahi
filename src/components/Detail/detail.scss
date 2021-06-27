@@ -1,3 +1,6 @@
+@import './../../styles/mixins.scss';
+@import './../../styles/variables.scss';
+
 *,
 *::after,
 *::before {
@@ -7,8 +10,7 @@
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
+    @include flexbox(column, null);
     align-items: center;
 
     .video-frame {
@@ -18,18 +20,15 @@
     }
 
     .details-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flexbox(column, center);
         align-items: center;
-        color: #e94d1d;
+        color: $main-color;
     }
 }
 
 @media (max-width: 1150px) {
     .main-container {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, null);
         align-items: center;
         height: 60vh;
 
@@ -40,11 +39,9 @@
         }
 
         .details-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flexbox(column, center);
             align-items: center;
-            color: #e94d1d;
+            color: $main-color;
         }
     }
 }
