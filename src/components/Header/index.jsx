@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <>
       <div className="top-container">
-        <Hamburger toggled={isOpen} toggle={setOpen} duration={0.8} color="#e94d1d" />
+        <Hamburger toggled={isOpen} toggle={setOpen} duration={0.8} color="#000000" />
       </div>
       <div className="navbar-container">
         {
