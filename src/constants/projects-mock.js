@@ -21,7 +21,7 @@ const PROJECTS = [
     id: 4,
     name: 'herbert',
     client: 'lorem ipsum',
-    link: 'https://player.vimeo.com/video/461749664?badge=0&autopause=0&player_id=0&app_id=58479'
+    link: 'https://player.vimeo.com/video/432920204'
   }
 ];
 
