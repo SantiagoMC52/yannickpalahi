@@ -42,7 +42,7 @@ body {
     &__nav {
         @include flexbox(row, space-around);
         margin-top: 30px;
-        width: 40%;
+        width: 50%;
     }
 
     a {
@@ -64,5 +64,30 @@ body {
     }
     .navbar-container {
         display: none;
+    }
+}
+
+@media (min-width: 418px) and (max-width: 555px) {
+    .desktop-navbar {
+        @include flexbox(row, center);
+        align-content: center;
+    
+        &__initials{
+            margin-top: 30px;
+            margin-left: 36px;
+            font-weight: 600;
+        }
+
+        &__nav {
+            @include flexbox(row, space-around);
+            margin-top: 30px;
+            width: 100%;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $main-color;
+            font-size: 25px;
+        }
     }
 }
