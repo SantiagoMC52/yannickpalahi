@@ -31,7 +31,7 @@
     .main-container {
         @include flexbox(column, null);
         align-items: center;
-        height: 60vh;
+        height: 70vh;
 
         .video-frame {
             width: 100%;
@@ -43,6 +43,10 @@
             @include flexbox(column, center);
             align-items: center;
             color: $main-color;
+            div{
+                width: 80%;
+                padding: 10px;
+            }
         }
     }
 }

@@ -24,6 +24,36 @@ const Detail = () => {
           {' '}
           {selectedProject?.client}
         </h3>
+        <div>
+          Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Ullam, eos. Recusandae
+          doloremque illo ipsa iure ipsam aspernatur
+          facilis totam quos.
+          Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Ullam, eos. Recusandae
+          doloremque illo ipsa iure ipsam aspernatur
+          facilis totam quos.
+          Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Ullam, eos. Recusandae
+          doloremque illo ipsa iure ipsam aspernatur
+          facilis totam quos.
+          Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Ullam, eos. Recusandae
+          doloremque illo ipsa iure ipsam aspernatur
+          facilis totam quos.
+          Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Ullam, eos. Recusandae
+          doloremque illo ipsa iure ipsam aspernatur
+          facilis totam quos.
+          Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Ullam, eos. Recusandae
+          doloremque illo ipsa iure ipsam aspernatur
+          facilis totam quos.
+          Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Ullam, eos. Recusandae
+          doloremque illo ipsa iure ipsam aspernatur
+          facilis totam quos.
+        </div>
       </div>
     </section>
   );
