@@ -49,6 +49,11 @@
             }
         }
     }
+
+    .information{
+        @include flexbox(column, center);
+        align-items: center;
+    }
 }
 
 @media (max-width: 400px){
@@ -93,46 +98,12 @@
 
 @media (min-width: 1120px) {
     .main-container {
-        background-color: red;
-        margin-top: 20px;
-    
-        &__title {
-            @include flexbox(row, center);
-            font-size: 13px;
-            margin: 10px;
+
+        &-data{
+            display: flex;
+
         }
     
-        &-data {
-            @include flexbox(column, center);
-            align-items: center;
-            margin-top: 20px;
-            background-color: blue;
-    
-            &__frame {
-                width: 400px;
-                height: 300px;
-            }
-    
-            &__extra {
-                @include flexbox(column, center);
-                padding: 10px;
-                font-size: 20px;
-            }
-    
-            &__description {
-                text-align: justify;
-                padding: 0px 10px 20px 10px;
-                font-size: 20px;
-            }
-    
-            &__ul {
-                list-style: none;
-                font-size: 20px;
-    
-                li {
-                    padding-bottom: 2px;
-                }
-            }
-        }
+       
     }
 }
