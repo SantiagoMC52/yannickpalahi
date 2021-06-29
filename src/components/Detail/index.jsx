@@ -21,7 +21,7 @@ const Detail = () => {
         <h2>{selectedProject?.title}</h2>
       </div>
       <div className="main-container-data">
-        <div>
+        <div className="main-container-data__video-container">
           {selectedProject?.link
             ? (
               <iframe

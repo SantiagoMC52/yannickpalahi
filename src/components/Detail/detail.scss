@@ -99,11 +99,33 @@
 @media (min-width: 1120px) {
     .main-container {
 
+        &__title{
+            font-size: 60px;
+            letter-spacing: 5px;
+        }
         &-data{
             display: flex;
+            flex-direction: row;
 
+            &__video-container{
+                width: 1150px;
+            }
+
+            &__frame{
+                width: 1200px;
+                height: 600px;
+            }
+            &__description{
+                width: 340px;
+            }
+
+            .information{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items:flex-start;
+                height: 604px;
+            }
         }
-    
-       
     }
 }
