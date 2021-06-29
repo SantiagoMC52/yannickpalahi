@@ -23,7 +23,7 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 835px) {
     .aboutme-container {
         @include flexbox(row, center);
         align-items: center;
