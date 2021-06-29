@@ -1,0 +1,45 @@
+@import './../../styles/mixins.scss';
+@import './../../styles/variables.scss';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-container{
+    @include flexbox(column, center);
+    align-items: center;
+    height: 80vh;
+
+    &__name{
+        padding: 5px;
+        font-size: 45px;
+    }
+
+    &__extra{
+        padding: 5px;
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 920px){
+    .dashboard-container{
+        @include flexbox(column, center);
+        align-items: center;
+        height: 80vh;
+    
+        &__name{
+            padding: 5px;
+            font-size: 120px;
+        }
+    
+        &__extra{
+            width: 900px;
+            text-align: right;
+            font-size: 45px;
+        }
+    }
+}
