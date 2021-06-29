@@ -10,43 +10,39 @@
 }
 
 .main-container {
-    @include flexbox(column, null);
+    @include flexbox(column, center);
     align-items: center;
+    margin-top: 20px;
 
-    .video-frame {
-        width: 55%;
-        height: 55vh;
-        padding: 10px;
-        margin-top: 40px
+    &__title {
+        @include flexbox(row, center);
+        font-size: 17px;
+        margin: 10px;
     }
 
-    .details-container {
+    &__frame {
+        width: 400px;
+        height: 300px;
+    }
+
+    &__extra {
         @include flexbox(column, center);
-        align-items: center;
-        color: $main-color;
+        padding: 10px;
+        font-size: 20px;
     }
-}
 
-@media (max-width: 1150px) {
-    .main-container {
-        @include flexbox(column, null);
-        align-items: center;
-        height: 70vh;
+    &__description{
+        text-align: justify;
+        padding: 0px 10px 20px 10px;
+        font-size: 20px;
+    }
 
-        .video-frame {
-            width: 100%;
-            height: 100vh;
-            padding: 10px;
-        }
+    &__ul{
+        list-style: none;
+        font-size: 20px;
 
-        .details-container {
-            @include flexbox(column, center);
-            align-items: center;
-            color: $main-color;
-            div{
-                width: 80%;
-                padding: 10px;
-            }
+        li{
+            padding-bottom: 2px;
         }
     }
 }
