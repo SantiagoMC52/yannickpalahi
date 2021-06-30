@@ -17,7 +17,7 @@
     div {
         @include flexbox(row, center);
         flex-wrap: wrap;
-        width: 50%;
+        width: 70%;
         font-size: 100px;
 
         a {

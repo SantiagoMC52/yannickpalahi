@@ -16,7 +16,7 @@ const PROJECTS = [
     car: 'Auto 3 Domeny',
     graphicDesigner: 'Aleix Planas',
     color: 'Biel Geli',
-    compositing: 'Nahco Vaya',
+    compositing: 'Nacho Vaya',
     matte: 'Albert Palahí',
     editing: 'Adrià Expòsit & Martí Colomer',
     artSupplier: 'Art estudi & Seis Stud',
