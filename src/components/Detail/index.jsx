@@ -17,9 +17,7 @@ const Detail = () => {
   return (
 
     <section className="main-container">
-      <div className="main-container__title">
-        <h2>{selectedProject?.title}</h2>
-      </div>
+      <h2 className="main-container__title">{selectedProject?.title}</h2>
       <div className="main-container-data">
         <div className="main-container-data__video-container">
           {selectedProject?.link

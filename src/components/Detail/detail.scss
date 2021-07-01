@@ -10,122 +10,49 @@
 }
 
 .main-container {
-    margin-top: 20px;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     &__title {
-        @include flexbox(row, center);
-        margin: 10px;
-        font-size: 16px;
+        font-size: 50px;
+        letter-spacing: 5px;
     }
 
     &-data {
-        @include flexbox(column, center);
+        height: 80vh;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
 
         &__frame {
-            width: 400px;
-            height: 300px;
+            width: 800px;
+            height: 400px;
         }
 
-        &__extra {
-            @include flexbox(column, center);
-            padding: 10px;
-            font-size: 20px;
-        }
-
-        &__description {
-            text-align: justify;
-            padding: 0px 10px 20px 10px;
-            font-size: 20px;
-        }
-
-        &__ul {
-            list-style: none;
-            font-size: 20px;
-
-            li {
-                padding-bottom: 2px;
-            }
-        }
-    }
-
-    .information{
-        @include flexbox(column, center);
-        align-items: center;
-    }
-}
-
-@media (max-width: 400px){
-    .main-container {    
-        &-data {
-            &__title {
-                @include flexbox(row, center);
-                font-size: 5px;
-                margin: 13px;
-            }
-    
-            &__frame {
-                width: 300px;
-                height: 200px;
-            }
-
-            &__ul {
-                list-style: none;
-                font-size: 15px;
-    
-                li {
-                    padding-bottom: 2px;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 600px) {
-    .main-container {
-
-       &-data{
-        &__description {
-            text-align: justify;
-            width: 400px;
-            padding: 0px 10px 20px 10px;
-            font-size: 20px;
-        }
-       }
-    }
-}
-
-@media (min-width: 1120px) {
-    .main-container {
-
-        &__title{
-            font-size: 60px;
-            letter-spacing: 5px;
-        }
-        &-data{
+        &__extra{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+        }
 
-            &__video-container{
-                width: 1150px;
-            }
+        &__description{
+            width: 340px;
+        }
 
-            &__frame{
-                width: 1200px;
-                height: 600px;
-            }
-            &__description{
-                width: 340px;
-            }
+        .information{
+            min-height: 460px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-size: 20px;
+        }
 
-            .information{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items:flex-start;
-                height: 604px;
-            }
+        &__ul{
+            list-style: none;
         }
     }
+
 }
