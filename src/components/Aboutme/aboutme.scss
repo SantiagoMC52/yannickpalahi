@@ -1,0 +1,42 @@
+@import './../../styles/mixins.scss';
+@import './../../styles/variables.scss';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutme-container {
+    @include flexbox(row, center);
+    align-items: center;
+    height: 90vh;
+
+    &__text {
+        padding: 40px 5px 0px 5px;
+        margin: 5px;
+        height: 70vh;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 835px) {
+    .aboutme-container {
+        @include flexbox(row, center);
+        align-items: center;
+        height: 90vh;
+
+        &__text {
+            @include flexbox(row, center);
+            align-items: center;
+            width: 1600px;
+            padding: 20px;
+            margin: 20px;
+            font-size: 50px;
+            text-align: center;
+        }
+    }
+}

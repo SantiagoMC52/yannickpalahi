@@ -17,8 +17,8 @@ const Header = () => {
           <nav className="navbar-container__nav">
             <Link to="/">YP</Link>
             <Link to="/projects">Projects</Link>
+            <Link to="/aboutme">About</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/aboutme">About Me</Link>
           </nav>
         ) : ''
       }
@@ -30,8 +30,8 @@ const Header = () => {
         </nav>
         <nav className="desktop-navbar__nav">
           <Link to="/projects">Projects</Link>
+          <Link to="/aboutme">About</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/aboutme">About Me</Link>
         </nav>
       </div>
     </>
