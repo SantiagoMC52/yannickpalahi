@@ -9,50 +9,60 @@
     box-sizing: border-box;
 }
 
-.main-container {
-    display: flex;
-    height: 90vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    &__title {
-        font-size: 50px;
-        letter-spacing: 5px;
-    }
-
-    &-data {
-        height: 80vh;
-        width: auto;
-        display: flex;
-        justify-content: space-between;
+@media (max-width:414px){
+    .main-container{
+        @include flexbox(column, null);
         align-items: center;
+        height: 90vh;
 
-        &__frame {
-            width: 800px;
-            height: 400px;
+        &__title{
+            font-size: 25px;
+            padding-top: 10px ;
         }
 
-        &__extra{
-            display: flex;
-            flex-direction: column;
+        &-data{
+            width: 100%;
+            height: 80vh;
+            @include flexbox(column, space-around);
+            align-items: center;
+
+            &__video-container{
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+                width: 100%;
+                height: 40vh;
+            }
+
+            &__frame{
+                width: 550px;
+            }
+
+            &__extra{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+
+            &__description{
+                width: 300px;
+            }
+
+            .information{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                font-size: 17px;
+            }
+
+            &__ul{
+                list-style: none;
+                li{
+                    margin-bottom: 1.5px;
+                }
+            }
         }
 
-        &__description{
-            width: 340px;
-        }
-
-        .information{
-            min-height: 460px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            font-size: 20px;
-        }
-
-        &__ul{
-            list-style: none;
-        }
     }
 
 }
