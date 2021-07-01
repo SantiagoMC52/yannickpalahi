@@ -9,23 +9,23 @@
     box-sizing: border-box;
 }
 
-@media (max-width:1000px){
-    .main-container{
+@media (max-width:1000px) {
+    .main-container {
         @include flexbox(column, null);
         align-items: center;
         height: 90vh;
 
-        &__title{
+        &__title {
             font-size: 25px;
-            padding-top: 10px ;
+            padding-top: 10px;
         }
 
-        &-data{
+        &-data {
             width: 100%;
             @include flexbox(column, space-around);
             align-items: center;
 
-            &__video-container{
+            &__video-container {
                 display: flex;
                 justify-content: center;
                 padding: 5px;
@@ -33,30 +33,31 @@
                 height: 40vh;
             }
 
-            &__frame{
+            &__frame {
                 width: 550px;
             }
 
-            &__extra{
+            &__extra {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 10px;
             }
 
-            &__description{
+            &__description {
                 width: 300px;
             }
 
-            .information{
+            .information {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 font-size: 17px;
             }
 
-            &__ul{
+            &__ul {
                 list-style: none;
-                li{
+
+                li {
                     margin-bottom: 1.5px;
                 }
             }
@@ -64,49 +65,49 @@
     }
 }
 
-@media (min-width:1020px){
+@media (min-width:1020px) {
     .main-container {
         display: flex;
         height: 90vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    
+
         &__title {
             font-size: 50px;
             letter-spacing: 5px;
         }
-    
+
         &-data {
             height: 80vh;
             width: auto;
             display: flex;
             justify-content: space-around;
             align-items: center;
-    
+
             &__frame {
                 width: 800px;
                 height: 400px;
             }
-    
-            &__extra{
+
+            &__extra {
                 display: flex;
                 flex-direction: column;
             }
-    
-            &__description{
+
+            &__description {
                 width: 340px;
             }
-    
-            .information{
+
+            .information {
                 min-height: 460px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 font-size: 20px;
             }
-    
-            &__ul{
+
+            &__ul {
                 list-style: none;
             }
         }
