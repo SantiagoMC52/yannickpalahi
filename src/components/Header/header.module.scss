@@ -1,6 +1,11 @@
 @import './../../styles/mixins.scss';
 @import './../../styles/variables.scss';
 
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./../../assets/HelveticaNeue.ttf')
+}
+
 *,
 *::after,
 *::before {
@@ -23,6 +28,7 @@
             text-decoration: none;
             color: white;
             font-size: 20px;
+            font-family: HelveticaNeue;
         }
     }
 }
@@ -44,7 +50,8 @@
     a {
         text-decoration: none;
         color: white;
-        font-size: 25px;
+        font-size: 18px;
+        font-family: HelveticaNeue;
     }
 }
 
@@ -83,7 +90,8 @@
         a {
             text-decoration: none;
             color: white;
-            font-size: 25px;
+            font-size: 18px;
+            font-family: HelveticaNeue;
         }
     }
 }
