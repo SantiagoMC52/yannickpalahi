@@ -20,6 +20,7 @@
         height: 70vh;
         font-size: 30px;
         text-align: center;
+        font-family: $helvetica-medium;
     }
 }
 
@@ -32,11 +33,12 @@
         &__text {
             @include flexbox(row, center);
             align-items: center;
-            width: 1600px;
+            width: 1160px;
             padding: 20px;
             margin: 20px;
-            font-size: 50px;
+            font-size: 35px;
             text-align: center;
+            font-family: $helvetica-medium;
         }
     }
 }
