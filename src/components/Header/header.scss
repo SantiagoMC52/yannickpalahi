@@ -9,10 +9,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: white;
-}
-
 .top-container {
     @include flexbox(row, flex-end);
     margin-top: 20px;
