@@ -1,11 +1,6 @@
 @import './../../styles/mixins.scss';
 @import './../../styles/variables.scss';
 
-@font-face {
-    font-family: 'HelveticaNeue';
-    src: url('./../../assets/HelveticaNeue.ttf')
-}
-
 *,
 *::after,
 *::before {
@@ -28,7 +23,7 @@
             text-decoration: none;
             color: $main-color;
             font-size: 20px;
-            font-family: HelveticaNeue;
+            font-family: $helvetica-regular;
         }
     }
 }
@@ -36,11 +31,12 @@
 .desktop-navbar {
     @include flexbox(row, space-between);
 
-    &__initials{
+    &__initials {
         margin-top: 30px;
         margin-left: 90px;
         font-weight: 600;
     }
+
     &__nav {
         @include flexbox(row, space-around);
         margin-top: 30px;
@@ -49,7 +45,7 @@
 
     a {
         text-decoration: none;
-        font-family: HelveticaNeue;
+        font-family: $helvetica-regular;
         color: $main-color;
         font-size: 18px;
     }
@@ -65,6 +61,7 @@
     .top-container {
         display: none;
     }
+
     .navbar-container {
         display: none;
     }
@@ -74,8 +71,8 @@
     .desktop-navbar {
         @include flexbox(row, center);
         align-content: center;
-    
-        &__initials{
+
+        &__initials {
             margin-top: 30px;
             margin-left: 36px;
             font-weight: 600;
@@ -86,12 +83,12 @@
             margin-top: 30px;
             width: 100%;
         }
-    
+
         a {
             text-decoration: none;
             color: $main-color;
             font-size: 18px;
-            font-family: HelveticaNeue;
+            font-family: $helvetica-regular;
         }
     }
 }

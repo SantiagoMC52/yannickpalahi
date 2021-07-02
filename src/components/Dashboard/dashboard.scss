@@ -1,11 +1,6 @@
 @import './../../styles/mixins.scss';
 @import './../../styles/variables.scss';
 
-@font-face {
-    font-family: 'HelveticaMedium';
-    src: url('./../../assets/HelveticaNeue-Medium.ttf')
-}
-
 *,
 *::after,
 *::before {
@@ -14,41 +9,41 @@
     box-sizing: border-box;
 }
 
-.dashboard-container{
+.dashboard-container {
     @include flexbox(column, center);
     align-items: center;
     height: 80vh;
 
-    &__name{
+    &__name {
         padding: 5px;
         font-size: 45px;
-        font-family: HelveticaMedium;
+        font-family: $helvetica-medium;
     }
 
-    &__extra{
+    &__extra {
         padding: 5px;
         font-size: 30px;
-        font-family: HelveticaMedium;
+        font-family: $helvetica-medium;
     }
 }
 
-@media (min-width: 920px){
-    .dashboard-container{
+@media (min-width: 920px) {
+    .dashboard-container {
         @include flexbox(column, center);
         align-items: center;
         height: 80vh;
-    
-        &__name{
+
+        &__name {
             padding: 5px;
             font-size: 105px;
-            font-family: HelveticaMedium;
+            font-family: $helvetica-medium;
         }
-    
-        &__extra{
+
+        &__extra {
             width: 700px;
             text-align: right;
             font-size: 37px;
-            font-family: HelveticaMedium;
+            font-family: $helvetica-medium;
         }
     }
 }
