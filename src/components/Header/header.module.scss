@@ -9,33 +9,33 @@
     box-sizing: border-box;
 }
 
-.top-container {
+.container {
     @include flexbox(row, flex-end);
     margin-top: 20px;
     margin-right: 20px;
 }
 
-.navbar-container {
-    &__nav {
+.navbar {
+    .nav {
         @include flexbox(row, space-around);
 
         a {
             text-decoration: none;
-            color: $main-color;
+            color: white;
             font-size: 20px;
         }
     }
 }
 
-.desktop-navbar {
+.desktop {
     @include flexbox(row, space-between);
 
-    &__initials{
+    .initials{
         margin-top: 30px;
         margin-left: 90px;
         font-weight: 600;
     }
-    &__nav {
+    .nav {
         @include flexbox(row, space-around);
         margin-top: 30px;
         width: 50%;
@@ -43,38 +43,38 @@
 
     a {
         text-decoration: none;
-        color: $main-color;
+        color: white;
         font-size: 25px;
     }
 }
 
 @media (max-width: 416px) {
-    .desktop-navbar {
+    .desktop {
         display: none;
     }
 }
 
 @media (min-width: 415px) {
-    .top-container {
+    .container {
         display: none;
     }
-    .navbar-container {
+    .navbar {
         display: none;
     }
 }
 
 @media (min-width: 418px) and (max-width: 555px) {
-    .desktop-navbar {
+    .desktop {
         @include flexbox(row, center);
         align-content: center;
     
-        &__initials{
+        .initials{
             margin-top: 30px;
             margin-left: 36px;
             font-weight: 600;
         }
 
-        &__nav {
+        .nav {
             @include flexbox(row, space-around);
             margin-top: 30px;
             width: 100%;
@@ -82,7 +82,7 @@
     
         a {
             text-decoration: none;
-            color: $main-color;
+            color: white;
             font-size: 25px;
         }
     }

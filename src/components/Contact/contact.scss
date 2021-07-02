@@ -1,0 +1,73 @@
+@import './../../styles/mixins.scss';
+@import './../../styles/variables.scss';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    height: 80vh;
+    @include flexbox(column, space-evenly);
+    align-items: center;
+
+    &__text {
+        @include flexbox(column, space-evenly);
+        align-items: inherit;
+        width: auto;
+        font-size: 25px;
+    }
+
+    &__media {
+        @include flexbox(column, space-evenly);
+        align-items: inherit;
+        width: auto;
+        font-size: 27px;
+        margin: 2px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+@media (min-width: 1220px) {
+    .contact-container {
+        height: 90vh;
+        @include flexbox(column, space-evenly);
+        align-items: initial;
+
+        &__text {
+            @include flexbox(column, space-evenly);
+            align-items: flex-start;
+            width: auto;
+            padding-left: 192px;
+            
+            h2{
+                font-size: 75px;
+            }
+
+            h4 {
+                padding-left: 45px;
+                font-size: 35px;
+            }
+        }
+
+        &__media {
+            @include flexbox(column, space-evenly);
+            align-items: flex-end;
+            width: auto;
+            font-size: 35px;
+            padding-right: 190px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
