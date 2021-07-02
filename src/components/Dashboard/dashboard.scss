@@ -1,6 +1,11 @@
 @import './../../styles/mixins.scss';
 @import './../../styles/variables.scss';
 
+@font-face {
+    font-family: 'HelveticaMedium';
+    src: url('./../../assets/HelveticaNeue-Medium.ttf')
+}
+
 *,
 *::after,
 *::before {
@@ -16,12 +21,14 @@
 
     &__name{
         padding: 5px;
-        font-size: 40px;
+        font-size: 45px;
+        font-family: HelveticaMedium;
     }
 
     &__extra{
         padding: 5px;
-        font-size: 25px;
+        font-size: 30px;
+        font-family: HelveticaMedium;
     }
 }
 
@@ -33,13 +40,15 @@
     
         &__name{
             padding: 5px;
-            font-size: 120px;
+            font-size: 105px;
+            font-family: HelveticaMedium;
         }
     
         &__extra{
-            width: 900px;
+            width: 700px;
             text-align: right;
-            font-size: 45px;
+            font-size: 37px;
+            font-family: HelveticaMedium;
         }
     }
 }

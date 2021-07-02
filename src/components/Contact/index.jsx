@@ -47,7 +47,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-container__media">
-          <p>657050235</p>
+          <p>657 05 02 35</p>
           <p>yannickpalahi@gmail.com</p>
           <a href="https://vimeo.com/user110474883" target="_blank" rel="noreferrer">vimeo</a>
           <a href="https://www.instagram.com/ypalahi/" target="_blank" rel="noreferrer">instagram</a>
