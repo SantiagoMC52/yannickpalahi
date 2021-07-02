@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -42,8 +43,8 @@ const Contact = () => {
           <style>{'body { background-color: black; color: white }'}</style>
         </Helmet>
         <div className="contact-container__text">
-          <h2>get in touch</h2>
-          <h4>let`s work together, say hello</h4>
+          <p className="contact-container__text-top">get in touch</p>
+          <p className="contact-container__text-bottom">let's work together, say hello</p>
         </div>
 
         <div className="contact-container__media">
