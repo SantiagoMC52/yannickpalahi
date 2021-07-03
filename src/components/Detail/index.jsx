@@ -19,7 +19,7 @@ const Detail = () => {
     <>
       <Header />
       {
-        Object.keys(selectedProject).length > 2
+        Object.keys(selectedProject).length > 3
           ? (
             <section className="main-container">
               <p className="main-container__title">{selectedProject?.title}</p>
