@@ -20,7 +20,7 @@ const Detail = () => {
     <>
       <Header />
       <section className="main-container">
-        <h2 className="main-container__title">{selectedProject?.title}</h2>
+        <p className="main-container__title">{selectedProject?.title}</p>
         <div className="main-container-data">
           <div className="main-container-data__video-container">
             {selectedProject?.link
