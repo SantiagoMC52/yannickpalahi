@@ -44,8 +44,7 @@ const PROJECTS = [
   },
   {
     id: 3,
-    name: 'honey cupons,',
-    coming: 'Coming soon...'
+    name: 'honey cupons,'
   },
   {
     id: 4,
