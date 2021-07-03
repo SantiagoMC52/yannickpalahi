@@ -47,7 +47,7 @@ const PROJECTS = [
   {
     id: 3,
     name: 'honey cupons,',
-    image: 'https://i.ibb.co/MBn07g3/honey.png'
+    image: 'https://i.ibb.co/CtwP32B/honey.png'
   },
   {
     id: 4,

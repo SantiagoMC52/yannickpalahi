@@ -24,10 +24,27 @@
             text-decoration: none;
             color: $main-color;
             font-family: $helvetica-medium;
+            
+            &:hover + .project-img{
+                visibility: visible;
+            }
         }
 
         span {
             margin-right: 15px;
+        }
+
+        .project-img {
+            display: flex;
+            visibility: hidden;
+            align-items: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 70vh;
+            width: 60vw;
+            z-index: -1;
         }
     }
 }
