@@ -189,7 +189,7 @@ const Detail = () => {
                 </div>
               </div>
             </section>
-          ) : <h2>COMING SOON...</h2>
+          ) : <h2 className="coming-msg">COMING SOON...</h2>
       }
     </>
   );
