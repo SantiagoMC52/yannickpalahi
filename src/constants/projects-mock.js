@@ -42,7 +42,7 @@ const PROJECTS = [
     color: 'Biel Geli',
     artSupplier: 'Art estudi',
     link: 'https://player.vimeo.com/video/461749664?badge=0&autopause=0&player_id=0&app_id=58479',
-    image: 'https://i.ibb.co/kynhxYJ/GASPAR.png'
+    image: 'https://i.ibb.co/LS6Q9bC/gaspar.jpg'
   },
   {
     id: 3,
