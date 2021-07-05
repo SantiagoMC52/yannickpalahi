@@ -21,9 +21,12 @@ const Projects = () => {
         <div>
           {
           projects.map((project) => (
-            <Link to={`/detail/${project.id}`}>
-              <span key={project.id}>{project.name}</span>
-            </Link>
+            <>
+              <Link to={`/detail/${project.id}`}>
+                <span key={project.id}>{project.name}</span>
+              </Link>
+              <img className="project-img" src={project.image} alt="" />
+            </>
           ))
         }
         </div>

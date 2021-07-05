@@ -1,1 +1,14 @@
+@font-face {
+    font-family: 'HelveticaMedium';
+    src: url('./../assets/HelveticaNeue-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('./../assets/HelveticaNeue.ttf')
+}
+
 $main-color: #000000;
+
+$helvetica-medium: HelveticaMedium;
+$helvetica-regular: HelveticaNeue;

@@ -16,9 +16,9 @@ const Header = () => {
         isOpen ? (
           <nav className="navbar-container__nav">
             <Link to="/">YP</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/aboutme">About</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/projects">projects</Link>
+            <Link to="/aboutme">about</Link>
+            <Link to="/contact">contact</Link>
           </nav>
         ) : ''
       }
@@ -29,9 +29,9 @@ const Header = () => {
           <Link to="/">YP</Link>
         </nav>
         <nav className="desktop-navbar__nav">
-          <Link to="/projects">Projects</Link>
-          <Link to="/aboutme">About</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/projects">projects</Link>
+          <Link to="/aboutme">about</Link>
+          <Link to="/contact">contact</Link>
         </nav>
       </div>
     </>

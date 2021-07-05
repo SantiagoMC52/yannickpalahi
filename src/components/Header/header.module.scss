@@ -23,6 +23,7 @@
             text-decoration: none;
             color: white;
             font-size: 20px;
+            font-family: $helvetica-regular;
         }
     }
 }
@@ -30,11 +31,12 @@
 .desktop {
     @include flexbox(row, space-between);
 
-    .initials{
+    .initials {
         margin-top: 30px;
         margin-left: 90px;
         font-weight: 600;
     }
+
     .nav {
         @include flexbox(row, space-around);
         margin-top: 30px;
@@ -44,7 +46,8 @@
     a {
         text-decoration: none;
         color: white;
-        font-size: 25px;
+        font-size: 18px;
+        font-family: $helvetica-regular;
     }
 }
 
@@ -58,6 +61,7 @@
     .container {
         display: none;
     }
+
     .navbar {
         display: none;
     }
@@ -67,8 +71,8 @@
     .desktop {
         @include flexbox(row, center);
         align-content: center;
-    
-        .initials{
+
+        .initials {
             margin-top: 30px;
             margin-left: 36px;
             font-weight: 600;
@@ -79,11 +83,12 @@
             margin-top: 30px;
             width: 100%;
         }
-    
+
         a {
             text-decoration: none;
             color: white;
-            font-size: 25px;
+            font-size: 18px;
+            font-family: $helvetica-regular;
         }
     }
 }

@@ -19,6 +19,7 @@
         align-items: inherit;
         width: auto;
         font-size: 25px;
+        font-family: $helvetica-regular;
     }
 
     &__media {
@@ -27,6 +28,7 @@
         width: auto;
         font-size: 27px;
         margin: 2px;
+        font-family: $helvetica-regular;
 
         a {
             text-decoration: none;
@@ -46,12 +48,14 @@
             align-items: flex-start;
             width: auto;
             padding-left: 192px;
-            
-            h2{
+
+            &-top {
+                font-family: $helvetica-regular;
                 font-size: 75px;
             }
 
-            h4 {
+            &-bottom {
+                font-family: $helvetica-regular;
                 padding-left: 45px;
                 font-size: 35px;
             }
@@ -62,6 +66,7 @@
             align-items: flex-end;
             width: auto;
             font-size: 35px;
+            font-family: $helvetica-regular;
             padding-right: 190px;
 
             a {
