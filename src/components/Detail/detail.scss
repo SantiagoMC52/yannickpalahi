@@ -37,6 +37,14 @@
             &__frame {
                 width: 550px;
             }
+        }
+
+        .information {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-size: 17px;
+            font-family: HelveticaNeue;
 
             &__extra {
                 display: flex;
@@ -46,14 +54,6 @@
 
             &__description {
                 width: 300px;
-            }
-
-            .information {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                font-size: 17px;
-                font-family: HelveticaNeue;
             }
 
             &__ul {
@@ -68,30 +68,45 @@
 }
 
 @media (min-width:1020px) {
+
     .main-container {
         display: flex;
-        height: 90vh;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        height: 90vh;
+        justify-content: space-evenly;
 
         &__title {
-            padding-top: 30px;
-            font-size: 65px;
+            text-align: center;
             font-family: HelveticaMedium;
+            font-size: 75px;
         }
 
         &-data {
-            height: 80vh;
-            width: auto;
-            display: flex;
-            justify-content: space-around;
+            @include flexbox(row, space-evenly);
             align-items: center;
+            height: auto;
+            width: 100%;
+
+            &__video-container {
+                height: auto;
+                width: auto;
+
+            }
 
             &__frame {
-                width: 800px;
-                height: 400px;
+                width: 790px;
+                height: 475px;
             }
+        }
+
+        .information {
+            height: 458px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 21px;
+            font-family: HelveticaNeue;
 
             &__extra {
                 display: flex;
@@ -99,20 +114,13 @@
             }
 
             &__description {
-                width: 340px;
-            }
-
-            .information {
-                min-height: 460px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                font-family: HelveticaNeue;
-                font-size: 18px;
+                width: 270px;
             }
 
             &__ul {
-                list-style: none;
+                li {
+                    list-style: none;
+                }
             }
         }
     }
