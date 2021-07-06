@@ -70,6 +70,7 @@
     }
 }
 
+
 @media (max-width: 1185px) {
     .list-container {
         @include flexbox(column, center);
@@ -84,6 +85,10 @@
                 text-decoration: none;
                 color: $main-color;
                 font-family: $helvetica-medium;
+
+                &:hover+.project-img {
+                    visibility: hidden;
+                }
             }
         }
     }
