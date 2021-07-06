@@ -20,7 +20,7 @@ const PROJECTS = [
     matte: 'Albert Palahí',
     editing: 'Adrià Expòsit & Martí Colomer',
     artSupplier: 'Art estudi & Seis Stud',
-    link: 'https://player.vimeo.com/video/447083641?badge=0&autopause=0&player_id=0&app_id=58479',
+    link: 'https://player.vimeo.com/video/571717641',
     image: 'https://i.ibb.co/ZxdSyc8/PANTOCRATOR.jpg'
   },
   {
@@ -42,7 +42,7 @@ const PROJECTS = [
     color: 'Biel Geli',
     artSupplier: 'Art estudi',
     link: 'https://player.vimeo.com/video/461749664?badge=0&autopause=0&player_id=0&app_id=58479',
-    image: 'https://i.ibb.co/LS6Q9bC/gaspar.jpg'
+    image: 'https://i.ibb.co/YN7FLDw/gaspar.jpg'
   },
   {
     id: 3,
