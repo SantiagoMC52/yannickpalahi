@@ -79,14 +79,14 @@
         &__title {
             text-align: center;
             font-family: HelveticaMedium;
-            font-size: 75px;
+            font-size: 68px;
         }
 
         &-data {
             @include flexbox(row, space-evenly);
             align-items: center;
             height: auto;
-            width: 100%;
+            width: 83%;
 
             &__video-container {
                 height: auto;
@@ -95,17 +95,17 @@
             }
 
             &__frame {
-                width: 790px;
-                height: 475px;
+                width: 710px;
+                height: 445px;
             }
         }
 
         .information {
-            height: 458px;
+            height: 400px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            font-size: 21px;
+            font-size: 18px;
             font-family: HelveticaNeue;
 
             &__extra {
