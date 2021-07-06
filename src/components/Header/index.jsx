@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Divide as Hamburger } from 'hamburger-react';
 import './header.scss';
 
@@ -15,10 +15,10 @@ const Header = () => {
         {
         isOpen ? (
           <nav className="navbar-container__nav">
-            <Link to="/">YP</Link>
-            <Link to="/projects">projects</Link>
-            <Link to="/aboutme">about</Link>
-            <Link to="/contact">contact</Link>
+            <NavLink to="/">YP</NavLink>
+            <NavLink to="/projects">projects</NavLink>
+            <NavLink to="/aboutme">about</NavLink>
+            <NavLink to="/contact">contact</NavLink>
           </nav>
         ) : ''
       }
@@ -26,12 +26,36 @@ const Header = () => {
 
       <div className="desktop-navbar">
         <nav className="desktop-navbar__initials">
-          <Link to="/">YP</Link>
+          <NavLink
+            exact
+            activeStyle={{ opacity: 0.5 }}
+            to="/"
+          >
+            YP
+          </NavLink>
         </nav>
         <nav className="desktop-navbar__nav">
-          <Link to="/projects">projects</Link>
-          <Link to="/aboutme">about</Link>
-          <Link to="/contact">contact</Link>
+          <NavLink
+            exact
+            activeStyle={{ opacity: 0.5 }}
+            to="/projects"
+          >
+            projects
+          </NavLink>
+          <NavLink
+            exact
+            activeStyle={{ opacity: 0.5 }}
+            to="/aboutme"
+          >
+            about
+          </NavLink>
+          <NavLink
+            exact
+            activeStyle={{ opacity: 0.5 }}
+            to="/contact"
+          >
+            contact
+          </NavLink>
         </nav>
       </div>
     </>

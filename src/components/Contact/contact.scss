@@ -72,6 +72,10 @@
             a {
                 text-decoration: none;
                 color: white;
+
+                &:hover{
+                    opacity: 0.5;
+                }
             }
         }
     }

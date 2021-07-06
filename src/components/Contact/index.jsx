@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Divide as Hamburger } from 'hamburger-react';
 import './contact.scss';
 import contactHeader from '../Header/header.module.scss';
@@ -34,7 +34,14 @@ const Contact = () => {
         <nav className={contactHeader.nav}>
           <Link to="/projects">projects</Link>
           <Link to="/aboutme">about</Link>
-          <Link to="/contact">contact</Link>
+          <NavLink
+            exact
+            activeStyle={{ opacity: 0.5 }}
+            to="/contact"
+          >
+            contact
+
+          </NavLink>
         </nav>
       </div>
 
