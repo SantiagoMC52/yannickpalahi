@@ -13,7 +13,6 @@ const PROJECTS = [
     camAssistant: 'Maxym Visual',
     artAssistant: 'Alicia Bullich',
     productionAssistant: 'Guillem Salellas',
-    car: 'Auto 3 Domeny',
     graphicDesigner: 'Aleix Planas',
     color: 'Biel Geli',
     compositing: 'Nacho Vaya',
