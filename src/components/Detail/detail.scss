@@ -16,7 +16,8 @@
         height: 90vh;
 
         &__title {
-            font-size: 23px;
+            text-align: center;
+            font-size: 27px;
             padding-top: 10px;
             font-family: HelveticaMedium;
         }
@@ -27,33 +28,29 @@
             align-items: center;
 
             &__video-container {
-                display: flex;
-                justify-content: center;
+                @include flexbox(row, center);
                 padding: 5px;
                 width: 100%;
                 height: 40vh;
             }
 
             &__frame {
-                width: 550px;
+                width: 390px;
             }
+        }
+
+        .information {
+            @include flexbox(column, space-evenly);
+            font-size: 18px;
+            font-family: HelveticaNeue;
 
             &__extra {
-                display: flex;
-                flex-direction: column;
+                @include flexbox(column, null);
                 margin-bottom: 10px;
             }
 
             &__description {
                 width: 300px;
-            }
-
-            .information {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                font-size: 17px;
-                font-family: HelveticaNeue;
             }
 
             &__ul {
@@ -68,52 +65,66 @@
 }
 
 @media (min-width:1020px) {
+
     .main-container {
-        display: flex;
-        height: 90vh;
-        flex-direction: column;
+        @include flexbox(column, space-evenly);
         align-items: center;
-        justify-content: center;
+        height: 90vh;
 
         &__title {
-            padding-top: 30px;
-            font-size: 65px;
+            text-align: center;
             font-family: HelveticaMedium;
+            font-size: 68px;
+            margin-top: 15px;
         }
 
         &-data {
-            height: 80vh;
-            width: auto;
-            display: flex;
-            justify-content: space-around;
+            @include flexbox(row, space-evenly);
             align-items: center;
+            height: auto;
+            width: 83%;
 
-            &__frame {
-                width: 800px;
-                height: 400px;
+            &__video-container {
+                height: auto;
+                width: auto;
+
             }
 
+            &__frame {
+                width: 710px;
+                height: 445px;
+            }
+        }
+
+        .information {
+            @include flexbox(column, space-between);
+            height: 402px;
+            display: flex;
+            font-size: 17px;
+            font-family: HelveticaNeue;
+
             &__extra {
-                display: flex;
-                flex-direction: column;
+                @include flexbox(column, null);
+                margin-top: -9px;
             }
 
             &__description {
-                width: 340px;
-            }
-
-            .information {
-                min-height: 460px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                font-family: HelveticaNeue;
-                font-size: 18px;
+                width: 270px;
             }
 
             &__ul {
-                list-style: none;
+                li {
+                    list-style: none;
+                }
             }
         }
     }
+}
+
+.coming-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
 }

@@ -36,11 +36,11 @@ const Detail = () => {
                     ) : ''}
                 </div>
                 <div className="information">
-                  <div className="main-container-data__extra">
+                  <div className="information__extra">
                     <span>{selectedProject?.type}</span>
                     <span>{selectedProject?.year}</span>
                   </div>
-                  <div className="main-container-data__description">
+                  <div className="information__description">
                     {selectedProject?.description
                       ? (
                         <>
@@ -48,7 +48,7 @@ const Detail = () => {
                         </>
                       ) : ''}
                   </div>
-                  <ul className="main-container-data__ul">
+                  <ul className="information__ul">
                     {selectedProject?.producer
                       ? (
                         <li>
@@ -189,7 +189,7 @@ const Detail = () => {
                 </div>
               </div>
             </section>
-          ) : <h2>COMING SOON...</h2>
+          ) : <h2 className="coming-msg">COMING SOON...</h2>
       }
     </>
   );
