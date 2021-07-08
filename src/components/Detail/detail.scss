@@ -16,7 +16,8 @@
         height: 90vh;
 
         &__title {
-            font-size: 23px;
+            text-align: center;
+            font-size: 27px;
             padding-top: 10px;
             font-family: HelveticaMedium;
         }
@@ -27,28 +28,24 @@
             align-items: center;
 
             &__video-container {
-                display: flex;
-                justify-content: center;
+                @include flexbox(row, center);
                 padding: 5px;
                 width: 100%;
                 height: 40vh;
             }
 
             &__frame {
-                width: 550px;
+                width: 390px;
             }
         }
 
         .information {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            font-size: 17px;
+            @include flexbox(column, space-evenly);
+            font-size: 18px;
             font-family: HelveticaNeue;
 
             &__extra {
-                display: flex;
-                flex-direction: column;
+                @include flexbox(column, null);
                 margin-bottom: 10px;
             }
 
@@ -70,11 +67,9 @@
 @media (min-width:1020px) {
 
     .main-container {
-        display: flex;
-        flex-direction: column;
+        @include flexbox(column, space-evenly);
         align-items: center;
         height: 90vh;
-        justify-content: space-evenly;
 
         &__title {
             text-align: center;
@@ -102,16 +97,14 @@
         }
 
         .information {
+            @include flexbox(column, space-between);
             height: 402px;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
             font-size: 17px;
             font-family: HelveticaNeue;
 
             &__extra {
-                display: flex;
-                flex-direction: column;
+                @include flexbox(column, null);
                 margin-top: -9px;
             }
 
