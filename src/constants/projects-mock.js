@@ -40,7 +40,7 @@ const PROJECTS = [
     graphicDesigner: 'Aleix Planas',
     color: 'Biel Geli',
     artSupplier: 'Art estudi',
-    link: 'https://player.vimeo.com/video/461749664?badge=0&autopause=0&player_id=0&app_id=58479',
+    link: 'https://player.vimeo.com/video/574060554',
     image: 'https://i.ibb.co/YN7FLDw/gaspar.jpg'
   },
   {
