@@ -54,7 +54,6 @@ const Dashboard = () => {
 
       <section className="dashboard-container">
 
-        <p className="dashboard-container__year">2021</p>
         <div className="dashboard-container__name">
           <p>yannick palahí</p>
         </div>
