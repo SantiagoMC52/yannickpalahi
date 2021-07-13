@@ -25,9 +25,30 @@
         font-size: 30px;
         font-family: $helvetica-medium;
     }
+
+    .intro{
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+
+    .intro {
+        display: none;
+    }
+
 }
 
 @media (min-width: 920px) {
+
+    .intro {
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        z-index: -1;
+    }
+
     .dashboard-container {
         @include flexbox(column, center);
         align-items: center;
@@ -37,6 +58,7 @@
             padding: 5px;
             font-size: 105px;
             font-family: $helvetica-medium;
+            color:white;
         }
 
         &__extra {
@@ -44,6 +66,7 @@
             text-align: right;
             font-size: 37px;
             font-family: $helvetica-medium;
+            color:white;
         }
     }
 }
