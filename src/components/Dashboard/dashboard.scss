@@ -14,6 +14,12 @@
     align-items: center;
     height: 80vh;
 
+    &__year{
+        color: black;
+        font-size: 31px;
+        font-family: $helvetica-medium;
+    }
+
     &__name {
         padding: 5px;
         font-size: 45px;
@@ -54,6 +60,12 @@
         align-items: center;
         height: 80vh;
 
+        &__year{
+            color: white;
+            font-size: 37px;
+            font-family: $helvetica-medium;
+        }
+
         &__name {
             padding: 5px;
             font-size: 105px;
@@ -62,8 +74,6 @@
         }
 
         &__extra {
-            width: 700px;
-            text-align: right;
             font-size: 37px;
             font-family: $helvetica-medium;
             color:white;
