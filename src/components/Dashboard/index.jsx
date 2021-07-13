@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './dashboard.scss';
 import { Link, NavLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { Divide as Hamburger } from 'hamburger-react';
 import dashboardVideo from '../../assets/intro.mp4';
 import contactHeader from '../Header/header.module.scss';
@@ -9,10 +10,14 @@ const Dashboard = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
+      <Helmet>
+        <style>{'body { background-color: black; color: white }'}</style>
+      </Helmet>
       <video
         autoPlay
         loop
         muted
+        playsinline
         className="intro"
       >
         <source src={dashboardVideo} type="video/mp4" />
@@ -36,17 +41,17 @@ const Dashboard = () => {
         </nav>
       </div>
 
-      <div className="top-container">
-        <Hamburger toggled={isOpen} toggle={setOpen} duration={0.8} color="#000000" />
+      <div className={contactHeader.container}>
+        <Hamburger toggled={isOpen} toggle={setOpen} duration={0.8} color="#ffffff" />
       </div>
-      <div className="navbar-container">
+      <div className={contactHeader.navbar}>
         {
         isOpen ? (
-          <nav className="navbar-container__nav">
-            <NavLink to="/">YP</NavLink>
-            <NavLink to="/projects">projects</NavLink>
-            <NavLink to="/aboutme">about</NavLink>
-            <NavLink to="/contact">contact</NavLink>
+          <nav className={contactHeader.nav}>
+            <Link to="/">YP</Link>
+            <Link to="/projects">projects</Link>
+            <Link to="/aboutme">about</Link>
+            <Link to="/contact">contact</Link>
           </nav>
         ) : ''
       }

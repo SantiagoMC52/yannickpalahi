@@ -18,16 +18,14 @@
         padding: 5px;
         font-size: 45px;
         font-family: $helvetica-medium;
+        color:white;
     }
 
     &__extra {
         padding: 5px;
         font-size: 30px;
         font-family: $helvetica-medium;
-    }
-
-    .intro{
-        display: none;
+        color:white;
     }
 }
 
@@ -47,6 +45,7 @@
         object-fit: cover;
         height: 100%;
         z-index: -1;
+        overflow: hidden;
     }
 
     .dashboard-container {
