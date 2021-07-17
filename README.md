@@ -10,5 +10,5 @@
 - Website made for a friend for his final degree project. Minimalist website where you can find information about him and the projects he has made.
 
 
-[https://i.ibb.co/cL7t9vd/homepage.png](https://i.ibb.co/cL7t9vd/homepage.png)
+<img src="https://i.ibb.co/cL7t9vd/homepage.png" alt="homepage">
 
