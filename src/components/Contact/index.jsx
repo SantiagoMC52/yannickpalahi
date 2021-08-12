@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import DarkHeader from '../DarkHeader';
+import Header from '../Header';
 import './contact.scss';
 
 const Contact = () => (
@@ -10,7 +10,7 @@ const Contact = () => (
       <style>{'body { background-color: black; color: white }'}</style>
     </Helmet>
 
-    <DarkHeader />
+    <Header style={{ color: 'white' }} />
     <section className="contact-container">
       <div className="contact-container__text">
         <p className="contact-container__text-top">get in touch</p>
