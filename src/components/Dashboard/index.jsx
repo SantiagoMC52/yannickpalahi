@@ -1,7 +1,7 @@
 import React from 'react';
 import './dashboard.scss';
 import { Helmet } from 'react-helmet';
-import DarkHeader from '../DarkHeader';
+import Header from '../Header';
 import dashboardVideo from '../../assets/intro.mp4';
 
 const Dashboard = () => (
@@ -20,7 +20,7 @@ const Dashboard = () => (
       <source src={dashboardVideo} type="video/mp4" />
     </video>
 
-    <DarkHeader />
+    <Header style={{ color: 'white' }} />
     <section className="dashboard-container">
       <div className="dashboard-container__name">
         <p>yannick palahí</p>

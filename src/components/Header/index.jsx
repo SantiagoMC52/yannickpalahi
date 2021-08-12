@@ -1,24 +1,31 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Divide as Hamburger } from 'hamburger-react';
 import './header.scss';
 
-const Header = () => {
+const Header = ({ style }) => {
   const [isOpen, setOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <>
       <div className="top-container">
-        <Hamburger toggled={isOpen} toggle={setOpen} duration={0.8} color="#000000" />
+        {
+          location.pathname === '/' || location.pathname === '/contact'
+            ? <Hamburger toggled={isOpen} toggle={setOpen} duration={0.8} color="#ffffff" />
+            : <Hamburger toggled={isOpen} toggle={setOpen} duration={0.8} color="#000000" />
+        }
+
       </div>
       <div className="navbar-container">
         {
         isOpen ? (
           <nav className="navbar-container__nav">
-            <NavLink to="/">YP</NavLink>
-            <NavLink to="/projects">projects</NavLink>
-            <NavLink to="/aboutme">about</NavLink>
-            <NavLink to="/contact">contact</NavLink>
+            <NavLink style={style} to="/">YP</NavLink>
+            <NavLink style={style} to="/projects">projects</NavLink>
+            <NavLink style={style} to="/aboutme">about</NavLink>
+            <NavLink style={style} to="/contact">contact</NavLink>
           </nav>
         ) : ''
       }
@@ -29,6 +36,7 @@ const Header = () => {
           <NavLink
             exact
             activeStyle={{ opacity: 0.5 }}
+            style={style}
             to="/"
           >
             YP
@@ -38,6 +46,7 @@ const Header = () => {
           <NavLink
             exact
             activeStyle={{ opacity: 0.5 }}
+            style={style}
             to="/projects"
           >
             projects
@@ -45,6 +54,7 @@ const Header = () => {
           <NavLink
             exact
             activeStyle={{ opacity: 0.5 }}
+            style={style}
             to="/aboutme"
           >
             about
@@ -52,6 +62,7 @@ const Header = () => {
           <NavLink
             exact
             activeStyle={{ opacity: 0.5 }}
+            style={style}
             to="/contact"
           >
             contact
